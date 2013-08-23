@@ -67,7 +67,7 @@ html, body, .container, .scroller {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #336ca6;
+	background: #000;
 	-webkit-transform: translate3d(-100%, 0, 0);
 	-moz-transform: translate3d(-100%, 0, 0);
 	transform: translate3d(-100%, 0, 0);
@@ -128,7 +128,7 @@ html, body, .container, .scroller {
 
 /* overlap */
 .mp-overlap .mp-level.mp-level-open {
-	box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 0 2px rgba(255,255,255,0.2);
 	-webkit-transform: translate3d(-40px, 0, 0);
 	-moz-transform: translate3d(-40px, 0, 0);
 	transform: translate3d(-40px, 0, 0);
@@ -165,13 +165,18 @@ html, body, .container, .scroller {
 	list-style: none;
 }
 
+.mp-menu ul a{
+	color:#fff;
+}
+
+
 .mp-menu h2 {
 	margin: 0;
 	padding: 1em;
-	color: rgba(0,0,0,0.4);
+	color: rgba(255,255,255,0.4);
 	text-shadow: 0 0 1px rgba(0,0,0,0.1);
 	font-weight: 300;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
 .mp-menu.mp-overlap h2::before {
@@ -211,9 +216,9 @@ html, body, .container, .scroller {
 	display: block;
 	padding: 0.7em 1em 0.7em 1.8em;
 	outline: none;
-	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px rgba(255,255,255,0.2);
 	text-shadow: 0 0 1px rgba(255,255,255,0.1);
-	font-size: 1.4em;
+	font-size: 1.2em;
 	-webkit-transition: background 0.3s, box-shadow 0.3s;
 	-moz-transition: background 0.3s, box-shadow 0.3s;
 	transition: background 0.3s, box-shadow 0.3s;
@@ -223,23 +228,25 @@ html, body, .container, .scroller {
 	position: absolute;
 	left: 10px;
 	z-index: -1;
-	color: rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.2);
 	line-height: 3.5;
 }
 
 .mp-level > ul > li:first-child > a {
-	box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px rgba(255,255,255,0.2), inset 0 1px rgba(255,255,255,0.2);
 }
 
 .mp-menu ul li a:hover,
-.mp-level > ul > li:first-child > a:hover {
-	background: rgba(0,0,0,0.2);
-	box-shadow: inset 0 -1px rgba(0,0,0,0);
+.mp-level > ul > li:first-child > a:hover,
+.mp-menu ul li a.current-subnav,
+.mp-level > ul > li:first-child > a.current-subnav {
+	background: rgba(255,255,255,0.2);
+	box-shadow: inset 0 -1px rgba(255,255,255,0);
 }
 
 .mp-menu .mp-level.mp-level-overlay > ul > li > a,
 .mp-level.mp-level-overlay > ul > li:first-child > a {
-	box-shadow: inset 0 -1px rgba(0,0,0,0);
+	box-shadow: inset 0 -1px rgba(255,255,255,0);
 }
 
 .mp-back {
@@ -253,7 +260,7 @@ html, body, .container, .scroller {
 	font-size: 0.8em;
 	padding: 1em;
 	position: relative;
-	box-shadow: inset 0 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px rgba(255,255,255,0.1);
 	-webkit-transition: background 0.3s;
 	-moz-transition: background 0.3s;
 	transition: background 0.3s;
@@ -265,7 +272,7 @@ html, body, .container, .scroller {
 	content: "\e037";
 	right: 10px;
 	font-size: 1.3em;
-	color: rgba(0,0,0,0.3);
+	color: rgba(255,255,255,0.3);
 }
 
 .mp-menu .mp-level.mp-level-overlay > .mp-back,

@@ -44,6 +44,10 @@
   
   -->
   
+		<script src="js/cashhimi-custom.js"></script>
+		<script>
+			var desktopDropdown = new Cashhimi.Dropdown("desktop-nav");
+		</script>
   
 		<script src="js/classie.js"></script>
 		<script src="js/mlpushmenu.js"></script>
