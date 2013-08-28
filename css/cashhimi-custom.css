@@ -50,6 +50,9 @@ body {
     font-size: 0.9em;
 }
 
+strong{
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);}
+
 a {
 	color:#000000;
 }
@@ -79,6 +82,7 @@ nav.for-desktop div.subnav {
 	top: -1000px;
 	text-align: left;
 	padding-top:0.3em;
+	padding-bottom:0.8em;
 	font-size: 0.8em;
 	background-color:rgba(0,0,0,.7);
 	color:white;
@@ -86,10 +90,29 @@ nav.for-desktop div.subnav {
 	margin-left:1em;
 }
 nav.for-desktop div.subnav a { color:white; }
+nav.for-desktop div.subnav a:hover{ text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.63);}
 nav.for-desktop div.subnav ul{ margin:0 0 0 0; }
 nav.for-desktop div.subnav li { float:left;padding:0 0 0.1em 1em; }
 nav.for-desktop div.subnav a.current-subnav{ color:#c9e591;}
 
+nav.for-desktop .shopping-bag{ 
+	color: white;
+	min-width:15px;
+	background-color: black;
+	padding: 0 0.4em;
+	display: inline-block;
+	position:relative;
+}
+nav.for-desktop .shopping-bag-handle{
+	background: url("../images/handle.png") no-repeat transparent;
+	width: 13px;
+	height: 7px;
+	position: absolute;
+	top: -7px;
+	right: 3px;
+	margin: 0 auto;
+	display: inline-block;
+}
 
 		/* NAV: Mobile */
 nav.for-mobile{margin-top:45px;}
@@ -99,6 +122,32 @@ nav.for-mobile{margin-top:45px;}
 .top-bar { color:#FFF; margin-bottom: 0; }
 .scroller { margin-top:0; }
 .scroller-inner { min-height: 600px; }
+
+
+.top-bar .shopping-bag{ 
+	color: black;
+	min-width: 15px;
+	background-color: white;
+	padding: 0 0.4em;
+	display: inline-block;
+	position: relative;
+	height: 1.3em;
+	top: 0;
+	font-size: 1em;
+	line-height: 1.3em!important;
+	margin: 0 0.5em 0 0;
+}
+.top-bar .shopping-bag-handle{
+	background: url("../images/handle-white.png") no-repeat transparent;
+	width: 13px;
+	height: 7px;
+	position: absolute;
+	top: -7px;
+	right: 3px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
 
 /* End NAV */
 
@@ -128,6 +177,22 @@ font-weight: bold;
 font-family: sans-serif;
 }
 
+/* the following orbit overrides make sure we use the same prev/next buttons as the sliders on the other pages */
+.orbit-container .orbit-prev > span {
+	background: url('../images/btn_left.png') no-repeat transparent;
+}
+.orbit-container .orbit-next > span {
+	background: url('../images/btn_right.png') no-repeat transparent;
+}
+
+.orbit-container .orbit-prev > span, .orbit-container .orbit-next > span {
+	height:28px;width:28px;
+	border:none;
+}
+.orbit-container .orbit-prev, .orbit-container .orbit-next{
+	background:none;
+} 
+
 /* end shop */
 
 
@@ -152,6 +217,10 @@ font-family: sans-serif;
 	height:28px;width:28px;
 	background: url('../images/btn_right.png') no-repeat transparent;
 	display:none;
+}
+
+.fancybox-title{
+	text-align: center;
 }
 
 /* End lookbook */
@@ -179,9 +248,9 @@ ul.footer li:first-child{
 }
 
 #subscribe{
-	width:120px;
+	width:110px;
 	display:inline-block;
-	font-size:0.8em;
+	font-size:0.7em;
 	margin-top:1px;
 	height:25px;
 }
@@ -208,9 +277,9 @@ a.email{
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 935px) {
 
-   /*body { font-size: .66em; }*/
+	.footer-crush{display:none;}
 
 }
 

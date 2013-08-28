@@ -41,7 +41,7 @@
 				</li>
 				
 				<li class='large-2 text-center'><a href='#'>STORES		</a></li>
-				<li class='large-2 text-center'><a href='#'>Icon		</a></li>
+				<li class='large-2 text-center'><a href='#' class='shopping-bag'><span class='shopping-bag-handle'></span>2</a></li>
 			</ul>
 	
 		</div>
@@ -51,7 +51,9 @@
 
 <div class='container'>
 	<div class='fixed'>
-	<div class='hide-for-medium-up top-bar row collapse'><div class='small-6 columns text-left'><a href="#" id='trigger'>Menu</a></div><div class='small-6 columns text-right'><a href="#">Icon</a></div></div>
+	<div class='hide-for-medium-up top-bar row collapse'><div class='small-6 columns text-left'><a href="#" id='trigger'>Menu</a></div><div class='small-6 columns text-right'>
+		<a href='#' class='shopping-bag'><span class='shopping-bag-handle'></span>2</a>
+	</div></div>
 	</div>
 	
 	<!-- Push Wrapper -->

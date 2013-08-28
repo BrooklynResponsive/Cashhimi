@@ -121,8 +121,12 @@ window.Cashhimi = {};
 		this.leftAnchorPointPerc=false;
 		this.smallSlideOffset=false;
 		this.slideUnitWidth = false;
+		this.resizer=false;
 		this.ul.imagesLoaded($.proxy(this,'_init'));
 		this._init();
+
+		
+		$(window).on('resize',$.proxy(this, 'resizeTimeout'));
 		
 	}
 	
@@ -142,6 +146,7 @@ window.Cashhimi = {};
 						
 			this.setLayoutConstants();
 			this.slides.css({position:'absolute'});
+			this.slides.find('img').css({display:'block',margin:"0 auto"});
 			/* position images */
 			var image0 = this.slides.first();
 			image0.css(this.centerCSS);
@@ -152,7 +157,7 @@ window.Cashhimi = {};
 			
 			
 			/* center all horizontally */
-			this.centerAllHoriz();
+			this.centerAllVertical();
 			
 			/* set up transitions */
 			this.slides.addClass("mag-slider-transitions");
@@ -170,14 +175,14 @@ window.Cashhimi = {};
 			var image = $(this.slides[this.currentSlide]);
 			image.width("50%");
 			this.ul.css({height:this.slides.first().height(),overflow:"hidden"});
-			this.smallSlideOffset = this.smallSlideOffset ||  (this.ul.height() - $(this.slides[1]).height())/2;
+			this.smallSlideOffset = (this.ul.height() - $(this.slides[1]).height())/2;
 			this.centerCSS = {position:'absolute',width:"50%", top:"0%", left:"24.5%"};
-			var halfCenterPerc = ((image.width() / this.ul.width()) * 50);
-			this.rightAnchorPointPerc = this.rightAnchorPointPerc || 50 + (halfCenterPerc + this.sp);
-			this.leftAnchorPointPerc = this.leftAnchorPointPerc || 50 - (halfCenterPerc + this.slideUnitWidth);
+			
+			this.rightAnchorPointPerc = this.rightAnchorPointPerc || 75 + (this.sp);
+			this.leftAnchorPointPerc = this.leftAnchorPointPerc || 25 - (this.slideUnitWidth);
 		},
 		
-		centerAllHoriz : function(){
+		centerAllVertical : function(){
 			var gh = this.ul.height();
 			this.div.find('li').each(function(){
 				$(this).css("top", ((gh  - $(this).height()) /2 ));
@@ -229,7 +234,14 @@ window.Cashhimi = {};
 			if(this.currentSlide == 0){ this.prevTrigger.hide(); }
 			this.nextTrigger.show();
 			
-		}
+		},
+		
+		resizeTimeout : function(){
+			clearInterval(this.resizer);
+			var self = this;
+			this.resizer = setTimeout(function(){ self.setLayoutConstants(); self.centerAllVertical(); } , 50);
+			
+		},
 		
 	}
 	

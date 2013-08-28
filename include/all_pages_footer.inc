@@ -1,11 +1,11 @@
 <div class='row collapse hide-for-small footer'>
 	<div class='large-8 columns'>
 		<ul class='footer'>
-			<li><a href='#'>CONTACT US				</a></li>
-			<li><a href='#'>PRIVACY POLICY			</a></li>
+			<li><a href='#'>CONTACT <span class='footer-crush'>US</span></a></li>
+			<li><a href='#'>PRIVACY <span class='footer-crush'>POLICY</span></a></li>
 			<li><a href='#'>TERMS &amp; CONDITIONS	</a></li>
 			<li><a href='#'>SHIPPING &amp; RETURNS	</a></li>
-			<li class='hide-for-medium-down'><strong>EMPOWERED BY ZINDIGO</strong></li>
+			<li><strong>EMPOWERED BY ZINDIGO</strong></li>
 		</ul>
 		
 	</div>
