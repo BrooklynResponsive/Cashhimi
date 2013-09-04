@@ -2,12 +2,12 @@
 
 	<nav class='row collapse for-desktop hide-for-small'>
 	
-		<div class='large-4 columns'><a href='#'><img src='images/logo.gif' alt='Cashhimi Logo'></a></div>
+		<div class='large-4 columns'><a href='#'><img src='images/logo.gif' class='logo' alt='Cashhimi Logo'></a></div>
 		<div class='large-8 columns'>
 	
 			
 			<ul class='row collapse' id='desktop-nav'>
-				<li class='large-2 text-center'><a href='#'>SHOP</a>
+				<li class='large-2 text-left'><a href='#'>SHOP</a>
 					<div class='subnav'>
 							<ul>
 								<li class=''><a href='#'>ALL</a></li>
@@ -27,10 +27,10 @@
 							<ul class='clear'><li><a href='#'>SALE</a></li></ul>
 					</div>
 				</li>
-				<li class='large-2 text-center'><a href='#'>ABOUT		</a></li>
-				<li class='large-2 text-center'><a href='#'>LOOKBOOK	</a></li>
+				<li class='large-2 text-left'><a href='#'>ABOUT		</a></li>
+				<li class='large-2 text-left'><a href='#'>LOOKBOOK	</a></li>
 				
-				<li class='large-2 text-center'><a href='#'>PRESS</a>
+				<li class='large-2 text-left'><a href='#'>PRESS</a>
 					<div class='subnav'>
 							<ul class='clear'><li><a href='#' class='current-subnav'>EDITORIAL</a></li></ul>
 	
@@ -40,8 +40,8 @@
 					</div>
 				</li>
 				
-				<li class='large-2 text-center'><a href='#'>STORES		</a></li>
-				<li class='large-2 text-center'><a href='#' class='shopping-bag'><span class='shopping-bag-handle'></span>2</a></li>
+				<li class='large-2 text-left'><a href='#'>STORES		</a></li>
+				<li class='large-2 text-right'><a href='#' class='shopping-bag'><span class='shopping-bag-handle'></span>2</a></li>
 			</ul>
 	
 		</div>

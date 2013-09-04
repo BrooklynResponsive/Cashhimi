@@ -53,7 +53,17 @@ window.Cashhimi = {};
 				if($(this).parent().width() < ew){ $(this).parent().css({'width':ew });	}
 				
 			})
-			this.el.find('div.subnav').hide().css('top',"2em");
+/* 				spread margins to compensate for the difference btwn text-left and text-center, etc  */
+			this.el.children('li').not(":last-child").each(function(index, elem){
+/*
+				var minc = 8 / ($(this).siblings('li').length - 1);
+				$(this).css('padding-left',((minc * index)+"%"));
+*/
+			});
+/* 				fix top margin, hide */
+			this.el.find('div.subnav').each(function(){
+				$(this).hide().css('top',"2em");
+			})
 		},
 		
 		showNav : function(e){
