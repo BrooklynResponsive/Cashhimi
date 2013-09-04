@@ -184,7 +184,7 @@ window.Cashhimi = {};
 			this.slides.width("17%");
 			var image = $(this.slides[this.currentSlide]);
 			image.width("50%");
-			this.ul.css({height:this.slides.first().height(),overflow:"hidden"});
+			this.ul.css({height:this.slides.first().find('img').height(),overflow:"hidden"});
 			this.smallSlideOffset = (this.ul.height() - $(this.slides[1]).height())/2;
 			this.centerCSS = {position:'absolute',width:"50%", top:"0%", left:"24.5%"};
 			
@@ -249,7 +249,7 @@ window.Cashhimi = {};
 		resizeTimeout : function(){
 			clearInterval(this.resizer);
 			var self = this;
-			this.resizer = setTimeout(function(){ self.setLayoutConstants(); self.centerAllVertical(); } , 50);
+			this.resizer = setTimeout(function(){ self.setLayoutConstants(); self.centerAllVertical(); } , 350);
 			
 		},
 		
