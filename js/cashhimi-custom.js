@@ -25,7 +25,7 @@ window.Cashhimi = {};
 		this._init();
 		this._layout();
 		
-		$(window).on('resize',$.proxy(this, 'resizeTimeout'));
+		//$(window).on('resize',$.proxy(this, 'resizeTimeout'));
 		
 
 	
@@ -42,6 +42,7 @@ window.Cashhimi = {};
 		
 		_layout : function(){
 			/* make wide enough to accomodate menu items */
+			/*
 			var divWidth = this.el.width();
 			
 			this.el.find('div.subnav ul').each( function(){
@@ -52,7 +53,10 @@ window.Cashhimi = {};
 				}) ;
 				if($(this).parent().width() < ew){ $(this).parent().css({'width':ew });	}
 				
+				
+				
 			})
+			*/
 /* 				spread margins to compensate for the difference btwn text-left and text-center, etc  */
 			this.el.children('li').not(":last-child").each(function(index, elem){
 /*
@@ -64,6 +68,7 @@ window.Cashhimi = {};
 			this.el.find('div.subnav').each(function(){
 				$(this).hide().css('top',"2em");
 			})
+			//console.log('_layout');
 		},
 		
 		showNav : function(e){
@@ -77,10 +82,12 @@ window.Cashhimi = {};
 		},
 		
 		resizeTimeout : function(){
+		  /*
 			clearInterval(this.resizer);
 			var self = this;
 			this.resizer = setTimeout(function(){ self._layout() } , 50);
-			
+			console.log('resizeTimeout ');
+			*/
 		},
 		
 		hideTimeout : function(){

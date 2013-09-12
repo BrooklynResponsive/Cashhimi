@@ -1,4 +1,4 @@
-<div class='row collapse hide-for-small footer'>
+<div class='row collapse  footer'>
 	<div class='large-8 columns'>
 		<ul class='footer'>
 			<li><a href='#'>CONTACT <span class='footer-crush'>US</span></a></li>

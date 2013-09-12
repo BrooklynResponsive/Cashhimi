@@ -17,3 +17,4 @@
 
   <!-- // Our custom css that overrides foundation's base CSS -->
   <link rel="stylesheet" type="text/css" href="css/cashhimi-custom.css" media="all"> 
+  <link rel="stylesheet" href="css/animate.css" />

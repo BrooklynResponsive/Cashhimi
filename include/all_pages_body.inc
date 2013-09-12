@@ -6,9 +6,9 @@
 		<div class='large-8 columns'>
 	
 			
-			<ul class='row collapse' id='desktop-nav'>
-				<li class='large-2 text-left'><a href='#'>SHOP</a>
-					<div class='subnav'>
+			<ul id='desktop-nav'>
+				<li><a href='#'>SHOP</a>
+					<div id="shopSub" class='subnav'>
 							<ul>
 								<li class=''><a href='#'>ALL</a></li>
 							</ul>
@@ -27,10 +27,10 @@
 							<ul class='clear'><li><a href='#'>SALE</a></li></ul>
 					</div>
 				</li>
-				<li class='large-2 text-left'><a href='#'>ABOUT		</a></li>
-				<li class='large-2 text-left'><a href='#'>LOOKBOOK	</a></li>
+				<li><a href='#'>ABOUT		</a></li>
+				<li><a href='#'>LOOKBOOK	</a></li>
 				
-				<li class='large-2 text-left'><a href='#'>PRESS</a>
+				<li><a href='#'>PRESS</a>
 					<div class='subnav'>
 							<ul class='clear'><li><a href='#' class='current-subnav'>EDITORIAL</a></li></ul>
 	
@@ -40,8 +40,8 @@
 					</div>
 				</li>
 				
-				<li class='large-2 text-left'><a href='#'>STORES		</a></li>
-				<li class='large-2 text-right'><a href='#' class='shopping-bag'><span class='shopping-bag-handle'></span>2</a></li>
+				<li class="noMarginRight"><a href='#'>STORES		</a></li>
+				<li><a href='#' class='shopping-bag'><span class='shopping-bag-handle'></span>2</a></li>
 			</ul>
 	
 		</div>

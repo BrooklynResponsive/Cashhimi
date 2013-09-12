@@ -54,3 +54,14 @@
 		<script>
 			var pushMenu = new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 		</script>
+		
+    <script>
+      $( document ).ready(function() {
+         $('header').addClass('animated fadeInDown');
+         $('.container').addClass('animated fadeInUp');
+         $('.container').addClass('animated fadeInUp');
+         $('.row.footer').css('opacity', '1');
+      });
+    </script>
+    
+
