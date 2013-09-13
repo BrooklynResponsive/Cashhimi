@@ -13,12 +13,16 @@
 								<li class=''><a href='#'>ALL</a></li>
 							</ul>
 							<ul class='clear'>
-								<li><a href='#' class='current-subnav'>HANDBAGS</a></li>
-								<li class=''><a href='#'>CROSSBODY BAGS</a></li>
-								<li class=''><a href='#'>SHOULDER BAGS</a></li>
-								<li class=''><a href='#'>CLUTCHES</a></li>
-								<li class=''><a href='#'>TOTES</a></li>
-								<li class=''><a href='#'>EXOTICS</a></li>						
+								<li class="hasSubSub ">
+								    <a href='#' class='current-subnav left'>HANDBAGS</a>
+								    <ul class="subSub left">
+        								<li class=''><a href='#'>CROSSBODY BAGS</a></li>
+        								<li class=''><a href='#'>SHOULDER BAGS</a></li>
+        								<li class=''><a href='#'>CLUTCHES</a></li>
+        								<li class=''><a href='#'>TOTES</a></li>
+        								<li class=''><a href='#'>EXOTICS</a></li>	
+        						      </ul>	
+        						  </li>				
 							</ul>
 							<ul class='clear'><li><a href='#'>SHOES</a></li></ul>
 	

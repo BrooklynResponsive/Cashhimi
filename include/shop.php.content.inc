@@ -1,4 +1,4 @@
-<div class='row fluid'>
+<div class='row'>
 <div class='small-12 columns'>
 <p class='hide-for-medium-up text-center swipe-for-more'>SWIPE FOR MORE</p>
 <div class="slideshow-wrapper">

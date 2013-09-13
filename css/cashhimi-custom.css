@@ -51,16 +51,26 @@
 body {
     font-family: 'hv-light', helvetica, sans-serif;
     font-size: 1em;
-	  padding: 1em 2em;
+    
+}
+
+@media only screen and (min-width: 1200px) {
+ body { padding: 1em 2em; }   
 }
 
 /*for animations */
+
+header {
+    position: relative;
+z-index: 9000;
+}
 
 header,
 .container,
 .row.footer {
   opacity: 0
 }
+
 /*
 @media only screen and (min-width: 1200px) {
 	  body{
@@ -133,41 +143,56 @@ nav.for-desktop  ul#desktop-nav li.noMarginRight {
 
 nav.for-desktop div.subnav {
 	position: absolute;
-	top: -1000px;
+	top: 2em;
 	text-align: left;
-	padding-top:0.3em;
-	padding-bottom:0.8em;
+	padding:1em;
 	font-size: 0.8em;
 	background-color:rgba(0,0,0,.7);
 	color:white;
-	z-index: 10;
+	z-index: 9310;
 	margin-left:-1em;
+	/*display: block !important;*/
 }
 
 nav.for-desktop div#shopSub.subnav {
-  width: 95%;
+  /*width: 95%;*/
 }
 nav.for-desktop div.subnav a { color:white; }
 nav.for-desktop div.subnav a:hover{ color:#c9e591; text-shadow: 0px 0px 1px #c9e591;}
 nav.for-desktop div.subnav ul{ margin:0 0 0 0; }
+/*
 nav.for-desktop ul#desktop-nav div.subnav li:first-child {padding-left: 1em;}
+*/
 nav.for-desktop ul#desktop-nav div.subnav li { 
     float:left; 
     padding: 0;/*padding:0 0 0.1em 1em; */
    margin: 0 2em 0 0;
    }
-   
-nav.for-desktop ul#desktop-nav div#shopSub.subnav li:last-child {margin: 0;}
+
+nav.for-desktop ul#desktop-nav div.subnav li.hasSubSub li { 
+
+   margin: 0  0 0 2em;
+   }
+ 
+nav.for-desktop ul#desktop-nav .subnav li:last-child {margin: 0;}
 nav.for-desktop div.subnav a.current-subnav{ color:#c9e591;}
 
 @media only screen and (min-width: 769px) and (max-width: 1000px){
   nav.for-desktop ul#desktop-nav div.subnav li { 
    margin: 0 .5em 0 0;
    }
-  
-
 }
 
+nav.for-desktop ul#desktop-nav div.subnav li.hasSubSub {
+    margin-right: 0;
+}
+nav.for-desktop ul#desktop-nav div.subnav li.hasSubSub a:first-child {
+    /*margin-right: .5em;*/
+}
+
+nav.for-desktop ul#desktop-nav div.subnav li.hasSubSub ul {
+    display: none;
+}
 
 nav.for-desktop .shopping-bag{ 
 	color: white;
