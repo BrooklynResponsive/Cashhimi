@@ -27,7 +27,7 @@ window.Cashhimi = {};
 			this.el.on('mouseleave', $.proxy(this, 'hideAllSub'));
 			this.el.find('li.hasSubSub').children('a').on('mouseenter', $.proxy(this, 'showSubSubNav'));
 			this.el.find('li.hasSubSub').on('mouseleave', $.proxy(this, 'hideSubSubNav'));
-			//console.log('_init 6');
+
 			//this.el.find('div.subnav').on('mouseleave', $.proxy(this, 'hideAllSub'));
 			//this.el.find('div.desktop-nav').on('mouseleave', $.proxy(this, 'hideAllSub'));
 			//this.el.find('div.subnav').children('li').children('a').on('mouseenter', $.proxy(this, 'showSubSubNav'));
