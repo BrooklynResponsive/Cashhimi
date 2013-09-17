@@ -27,12 +27,6 @@ window.Cashhimi = {};
 			this.el.on('mouseleave', $.proxy(this, 'hideAllSub'));
 			this.el.find('li.hasSubSub').children('a').on('mouseenter', $.proxy(this, 'showSubSubNav'));
 			this.el.find('li.hasSubSub').on('mouseleave', $.proxy(this, 'hideSubSubNav'));
-
-			//this.el.find('div.subnav').on('mouseleave', $.proxy(this, 'hideAllSub'));
-			//this.el.find('div.desktop-nav').on('mouseleave', $.proxy(this, 'hideAllSub'));
-			//this.el.find('div.subnav').children('li').children('a').on('mouseenter', $.proxy(this, 'showSubSubNav'));
-			//this.el.children('li').children('a').on('mouseenter', $.proxy(this, 'showNav'));
-			
 			//$('div.subnav').on('mousemove', $.proxy( function(){ clearTimeout(this.hider); }, this  ));
 		},
 		
@@ -78,7 +72,6 @@ window.Cashhimi = {};
 		hideAllSub : function(){
 		    $('div.subnav').fadeOut(250);
 		    $('.subSub:visible').hide();
-		    //console.log('hideAllSub');
 			//this.el.find('div.subnav').fadeOut(250);
 		},
 		
@@ -202,8 +195,9 @@ window.Cashhimi = {};
 		},
 		
 		setLayoutConstants : function(){
-			this.slideUnitWidth =(17+this.sp);
-			this.slides.width("17%");
+			this.slideUnitWidth =(22+this.sp);
+			//console.log('slideUnitWidth: ' + this.slideUnitWidth);
+			this.slides.width("22%");
 			var image = $(this.slides[this.currentSlide]);
 			image.width("50%");
 			this.ul.css({height:this.slides.first().find('img').height(),overflow:"hidden"});
@@ -230,7 +224,8 @@ window.Cashhimi = {};
 			e.stopImmediatePropagation();
 			if(this.currentSlide+1 == this.slides.length) return;
 			/* change width, left, top for currentSlide and currentSlide+1 */
-			$(this.slides[this.currentSlide]).css({width:"17%", left: (this.leftAnchorPointPerc + "%"), top: this.smallSlideOffset  });
+			//console.log('next');
+			$(this.slides[this.currentSlide]).css({width:"22%", left: (this.leftAnchorPointPerc + "%"), top: this.smallSlideOffset  });
 			$(this.slides[this.currentSlide+1]).css({width:"50%", left: "24.5%", top:0 });
 			/* now animate the others */
 			for(i=0;i<this.slides.length;i++){
@@ -251,7 +246,7 @@ window.Cashhimi = {};
 			e.stopImmediatePropagation();
 			if(this.currentSlide == 0) return;
 			/* change width, left, top for currentSlide and currentSlide-1 */
-			$(this.slides[this.currentSlide]).css({width:"17%", left: (this.rightAnchorPointPerc + "%"), top: this.smallSlideOffset  });
+			$(this.slides[this.currentSlide]).css({width:"22%", left: (this.rightAnchorPointPerc + "%"), top: this.smallSlideOffset  });
 			$(this.slides[this.currentSlide-1]).css({width:"50%", left: "24.5%", top:0 });
 			/* now animate the others */
 			for(i=0;i<this.slides.length;i++){
@@ -259,7 +254,7 @@ window.Cashhimi = {};
 					$(this.slides[i]).css({left: (this.rightAnchorPointPerc + ((i - this.currentSlide)*this.slideUnitWidth))+"%" });
 				}
 				if(i<(this.currentSlide-1)){
-					$(this.slides[i]).css({left: (this.leftAnchorPointPerc - (((this.currentSlide-2)-i)*this.slideUnitWidth))+"%" });
+					$(this.slides[i]).css({left: (this.leftAnchorPointPerc - (((this.currentSlide)-i)*this.slideUnitWidth))+"%" });
 				}
 			}
 			this.currentSlide--;

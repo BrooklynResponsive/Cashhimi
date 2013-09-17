@@ -70,7 +70,7 @@ header,
 .row.footer {
   opacity: 0
 }
-
+.mag-slider-transitions {/*border: 2px solid red;*/}
 /*
 @media only screen and (min-width: 1200px) {
 	  body{
